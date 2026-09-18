@@ -1,0 +1,11 @@
+# Workers Assets'e YUKLENMEYECEK dosyalar (bu dosya yalniz Workers tarafinda gecerli; Pages okumaz).
+#
+# _redirects: Pages'te SPA yeniden yazimi (`/*  /index.html  200`). Workers Assets ayni kurali
+#   "Infinite loop detected" diye REDDEDER ve deploy tamamen duser. Worker'da ayni isi
+#   `wrangler.worker.toml > [assets] not_found_handling = "single-page-application"` yapiyor,
+#   yani dosya Worker tarafinda gereksiz.
+# _headers: Pages'e ozel baslik kurallari. Workers Assets bunu hic okumaz; Worker ayni basliklari
+#   `worker/index.js > harden()` icinde `server/security.js > SEC_HEADERS` uzerinden ekler.
+#   Yuklenmesi sadece politikayi herkese acik bir dosya olarak servis etmek olurdu.
+_redirects
+_headers
