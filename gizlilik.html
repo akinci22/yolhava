@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YolHava — Gizlilik Politikası / Privacy Policy</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 18px 60px; line-height: 1.55; color: #1b2230; background: #f7f9fc; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 1.6em; }
+  .box { background: #fff; border: 1px solid #dfe5ef; border-radius: 12px; padding: 16px 20px; margin: 14px 0; }
+  code { background: #eef2f8; padding: 1px 5px; border-radius: 4px; }
+  hr { border: none; border-top: 1px solid #dfe5ef; margin: 36px 0; }
+  small { color: #5b6982; }
+</style>
+</head>
+<body>
+<h1>🌦️ YolHava — Gizlilik Politikası</h1>
+<p><small>Son güncelleme: 15 Eylül 2026 · Uygulama: <code>com.yolhava.app</code> · Geliştirici: Ömer Faruk Akıncı (İTÜ Meteoroloji Müh.) · İletişim: <a href="mailto:fb1907dekuruldu@gmail.com">fb1907dekuruldu@gmail.com</a></small></p>
+
+<div class="box">
+<h2>Kısaca</h2>
+<ul>
+  <li>Hesap açmadan çalışır. Reklam yok, analitik/izleme SDK'sı yok, üçüncü taraflara veri satışı yok.</li>
+  <li><b>Konum</b> yalnız haritayı bulunduğun yere ortalamak için, cihazda kullanılır; sunucuya <b>kaydedilmez</b>. İzin vermezsen uygulama yine çalışır.</li>
+  <li>Hava verisi isteği (harita görünümünün koordinatları) kendi sunucumuz (Cloudflare) üzerinden Open-Meteo / MET Norway'e iletilir; kişisel kimlik taşımaz.</li>
+  <li>İsteğe bağlı <b>İTÜ girişi</b> (Google ile) yalnız çizim panosu paylaşımı için; e-posta + ad + profil resmi URL'si tutulur.</li>
+</ul>
+</div>
+
+<h2>1. Toplanan veriler ve amaçları</h2>
+<ul>
+  <li><b>Konum (yaklaşık/kesin, isteğe bağlı):</b> Haritayı ilk açılışta konumuna ortalamak için. Cihazdan çıkmaz; saklanmaz.</li>
+  <li><b>Harita görünümü koordinatları:</b> Hava verisini getirmek için sunucumuza gider (Open-Meteo / met.no'ya iletilir). IP adresi, standart sunucu günlüklerinde geçici olarak (Cloudflare) yer alabilir; profil oluşturulmaz.</li>
+  <li><b>Yerel depolama (cihazda):</b> Dil/birim tercihleri, son hava verisi önbelleği, erişilebilir sunucu adresi, oturum jetonu. İstediğinde uygulama verisini temizleyerek silinir.</li>
+  <li><b>İTÜ girişi (isteğe bağlı):</b> Google kimliğinle giriş yaparsan e-posta adresin, adın ve profil resmi URL'n bir oturum jetonunda (30 gün) ve paylaştığın panolarda "paylaşan" bilgisi olarak tutulur. Şifren bize hiç gelmez. Yalnız <code>@itu.edu.tr</code> hesapları kabul edilir.</li>
+  <li><b>Paylaşılan çizim panoları:</b> "Paylaş"a bastığında çizimlerin + harita görünümü sunucuda (Cloudflare KV) en fazla 180 gün saklanır ve bağlantıyı bilen herkes görebilir. Kişisel veri koymamanı öneririz.</li>
+</ul>
+
+<h2>2. Üçüncü taraf servisler</h2>
+<ul>
+  <li><b>Barındırma:</b> Cloudflare (sunucu, önbellek, KV depolama).</li>
+  <li><b>Hava tahmini verisi:</b> Open-Meteo (veri CC BY 4.0) · MET Norway (met.no).</li>
+  <li><b>Harita altlığı ve yükselti:</b> EOX IT Services (Sentinel-2 cloudless / Terrain Light, Copernicus verisi) · Esri (Canvas, World Imagery, World Street, etiketler) · AWS Open Data — Terrain Tiles (Mapzen).</li>
+  <li><b>Radar:</b> RainViewer (küresel) · Meteoroloji Genel Müdürlüğü — MGM (Türkiye).</li>
+  <li><b>Uydu görüntüsü:</b> EUMETSAT (© EUMETSAT) · NASA GIBS / Worldview · SSEC RealEarth (Wisconsin Üniversitesi).</li>
+  <li><b>Hava haritaları:</b> MGM (Hezarfen) · NOAA — WPC, OPC, NWS.</li>
+  <li><b>İstasyon gözlemleri ve havacılık raporları:</b> Iowa State IEM · aviationweather.gov (NOAA).</li>
+  <li><b>Yer arama:</b> Open-Meteo Geocoding · BigDataCloud (ters coğrafi kodlama).</li>
+  <li><b>Giriş:</b> Google Identity Services — yalnız İTÜ girişini seçersen.</li>
+  <li class="dipnot"><small>Bu servislere giden istekler harita görünümünün koordinatlarını ve IP adresini içerir; ad, e-posta gibi kimlik bilgisi taşımaz. Kullandığımız açık kaynak bileşenlerin ve veri kaynaklarının lisansları için <a href="lisanslar.html">Lisanslar ve kaynaklar</a> sayfasına bak.</small></li>
+</ul>
+
+<h2>3. Çocuklar</h2>
+<p>Uygulama genel kitleye yöneliktir, çocuklara özel içerik toplamaz.</p>
+
+<h2>4. Verilerini silme</h2>
+<p>Cihaz verileri: uygulamayı kaldır ya da uygulama verilerini temizle. Hesap/pano kayıtları: e-posta ile yaz, 7 gün içinde silinir.</p>
+
+<h2>5. Değişiklikler</h2>
+<p>Bu sayfa güncellenirse tarih üstte değişir.</p>
+
+<hr>
+
+<h1>YolHava — Privacy Policy (English)</h1>
+<p><small>Last updated: 15 September 2026 · App: <code>com.yolhava.app</code> · Developer: Ömer Faruk Akıncı · Contact: <a href="mailto:fb1907dekuruldu@gmail.com">fb1907dekuruldu@gmail.com</a></small></p>
+<div class="box">
+<ul>
+  <li>Works without an account. No ads, no analytics/tracking SDKs, no data sale.</li>
+  <li><b>Location</b> (optional) is used only on-device to center the map; it is never stored on our servers. The app works if you deny it.</li>
+  <li>Weather requests (map-view coordinates) go through our Cloudflare proxy to Open-Meteo / MET Norway; they carry no personal identity. IPs may appear transiently in standard server logs.</li>
+  <li>Optional <b>ITU sign-in</b> (Google, restricted to <code>@itu.edu.tr</code>) is only needed to share drawing boards; we keep e-mail, name and avatar URL in a 30-day session token and as "shared by" on boards you publish. Shared boards are stored up to 180 days and visible to anyone with the link.</li>
+  <li>Local storage keeps preferences, a weather cache and the session token; clearing app data removes them.</li>
+  <li>Deletion: uninstall/clear data for device data; e-mail us for account/board records (deleted within 7 days).</li>
+  <li><b>Third-party services:</b> Cloudflare (hosting, cache, KV) · Open-Meteo (CC BY 4.0) and MET Norway (forecast data) · EOX IT Services, Esri, AWS Open Data (base maps, elevation) · RainViewer and MGM (radar) · EUMETSAT, NASA GIBS, SSEC RealEarth (satellite) · MGM and NOAA WPC/OPC/NWS (weather charts) · Iowa State IEM and aviationweather.gov (observations) · Open-Meteo Geocoding and BigDataCloud (place search) · Google Identity Services (only if you choose ITU sign-in). Requests carry map-view coordinates and your IP, never your name or e-mail. See <a href="lisanslar.html">Licences and sources</a>.</li>
+</ul>
+</div>
+</body>
+</html>

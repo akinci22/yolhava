@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>YolHava — Lisanslar ve kaynaklar</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 820px; margin: 0 auto; padding: 24px 18px 60px; line-height: 1.55; color: #1b2230; background: #f7f9fc; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 1.8em; }
+  h3 { font-size: 1rem; margin-top: 1.4em; margin-bottom: .3em; }
+  .box { background: #fff; border: 1px solid #dfe5ef; border-radius: 12px; padding: 16px 20px; margin: 14px 0; }
+  code { background: #eef2f8; padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  pre { background: #f2f5fa; border: 1px solid #e2e8f2; border-radius: 8px; padding: 12px 14px; overflow-x: auto; font-size: .8rem; line-height: 1.5; white-space: pre-wrap; }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; margin: 10px 0; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid #e4e9f2; vertical-align: top; }
+  th { color: #5b6982; font-weight: 600; font-size: .85rem; }
+  hr { border: none; border-top: 1px solid #dfe5ef; margin: 36px 0; }
+  small, .dim { color: #5b6982; }
+  a { color: #0d74ce; }
+</style>
+</head>
+<body>
+
+<h1>YolHava — Lisanslar ve kaynaklar</h1>
+<p class="dim">Son güncelleme: 22 Eylül 2026 · Bu sayfa, uygulamada kullanılan açık kaynak
+bileşenlerin lisanslarını ve harita/hava verisi kaynaklarının atıflarını listeler.</p>
+
+<div class="box">
+  <p><b>Uygulamanın kendi içeriği</b> — simülasyonlar, adım adım ispatlar, ansiklopedi
+  maddeleri, METAR/TAF çözücü, kıyı hattı verisi, çizim motoru ve arayüz — Ömer Faruk Akıncı
+  tarafından bu proje için yazılmıştır.</p>
+</div>
+
+<h2>1. Veri ve harita kaynakları</h2>
+
+<table>
+  <tr><th>Kaynak</th><th>Ne için</th><th>Atıf / şart</th></tr>
+  <tr><td><a href="https://open-meteo.com">Open-Meteo</a></td><td>Hava tahmini verisi</td><td>Veri CC BY 4.0 · ticari olmayan kullanım</td></tr>
+  <tr><td><a href="https://www.met.no">MET Norway</a></td><td>Hava tahmini (yedek)</td><td>NLOD / CC BY 4.0</td></tr>
+  <tr><td><a href="https://eox.at">EOX IT Services</a></td><td>Taban harita, koyu tema, uydu, fiziki, etiketler</td><td>Sentinel-2 cloudless (s2maps.eu) © EOX / Copernicus · Terrain Light © EOX IT Services</td></tr>
+  <tr><td><a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a></td><td>Sokak haritası, yer adı ve sınır katmanı (EOX render)</td><td>© OpenStreetMap katkıcıları (ODbL) · Render © EOX</td></tr>
+  <tr><td>AWS Open Data — Terrain Tiles</td><td>Yükselti (3B arazi)</td><td>Mapzen / AWS Open Data · NASA, USGS kaynaklı</td></tr>
+  <tr><td><a href="https://www.rainviewer.com">RainViewer</a></td><td>Küresel radar</td><td>Weather data by RainViewer</td></tr>
+  <tr><td><a href="https://www.mgm.gov.tr">Meteoroloji Genel Müdürlüğü (MGM)</a></td><td>Türkiye radarı, analiz ve havacılık kartları</td><td>© MGM · kamuyu bilgilendirme amaçlı, ticari olmayan kullanım</td></tr>
+  <tr><td><a href="https://www.eumetsat.int">EUMETSAT</a></td><td>Meteosat / MTG uydu görüntüsü</td><td>© EUMETSAT 2026</td></tr>
+  <tr><td><a href="https://worldview.earthdata.nasa.gov">NASA GIBS / Worldview</a></td><td>GOES, Himawari uydu görüntüsü</td><td>NASA EOSDIS GIBS</td></tr>
+  <tr><td><a href="https://realearth.ssec.wisc.edu">SSEC RealEarth</a></td><td>Küresel kızılötesi mozaik</td><td>SSEC, University of Wisconsin–Madison</td></tr>
+  <tr><td>NOAA — WPC · OPC · NWS</td><td>Yüzey analiz ve tahmin kartları</td><td>NOAA / National Weather Service (kamu malı)</td></tr>
+  <tr><td><a href="https://mesonet.agron.iastate.edu">Iowa State IEM</a></td><td>İstasyon gözlemleri</td><td>Iowa Environmental Mesonet, Iowa State University</td></tr>
+  <tr><td><a href="https://aviationweather.gov">aviationweather.gov</a></td><td>METAR / TAF / SIGMET</td><td>NOAA Aviation Weather Center (kamu malı)</td></tr>
+  <tr><td>BigDataCloud</td><td>Ters coğrafi kodlama</td><td>Ücretsiz katman</td></tr>
+  <tr><td>OpenMapTiles</td><td>Harita yazı tipi glifleri</td><td>openmaptiles.org</td></tr>
+</table>
+
+<p class="dim"><small>Hava ve harita verisi olduğu gibi sunulur; doğruluğu ve sürekliliği
+garanti edilmez. Resmî uyarılar için daima Meteoroloji Genel Müdürlüğü'nü esas al.</small></p>
+
+<h2>2. Açık kaynak bileşenler</h2>
+
+<table>
+  <tr><th>Bileşen</th><th>Kullanım</th><th>Lisans</th></tr>
+  <tr><td>React · React DOM</td><td>Arayüz</td><td>MIT</td></tr>
+  <tr><td>MapLibre GL JS</td><td>Harita motoru</td><td>BSD-3-Clause</td></tr>
+  <tr><td>KaTeX</td><td>Matematik dizgisi</td><td>MIT</td></tr>
+  <tr><td>Lucide</td><td>İkonlar</td><td>ISC</td></tr>
+  <tr><td>Vite · TypeScript · Capacitor</td><td>Derleme ve paketleme</td><td>MIT</td></tr>
+  <tr><td>Radix Colors</td><td>Renk paleti</td><td>MIT</td></tr>
+  <tr><td>IBM Plex Sans</td><td>Arayüz yazı tipi</td><td>SIL OFL 1.1</td></tr>
+  <tr><td>JetBrains Mono</td><td>Sayı ve kod yazı tipi</td><td>SIL OFL 1.1</td></tr>
+  <tr><td>STIX Two Text</td><td>Okuma ve matematik yazı tipi</td><td>SIL OFL 1.1</td></tr>
+</table>
+
+<h2>3. Lisans metinleri</h2>
+
+<h3>MIT (React, React DOM, KaTeX, Vite, TypeScript, Capacitor, Radix Colors)</h3>
+<pre>Permission is hereby granted, free of charge, to any person obtaining a copy of this
+software and associated documentation files (the "Software"), to deal in the Software
+without restriction, including without limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons
+to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</pre>
+<p class="dim"><small>Telif sahipleri: React/React DOM — Meta Platforms, Inc. ve katkıcıları ·
+KaTeX — Khan Academy ve katkıcıları · Vite — Evan You ve Vite katkıcıları ·
+TypeScript — Microsoft Corporation · Capacitor — Ionic (Drifty Co.) · Radix Colors — WorkOS.</small></p>
+
+<h3>BSD-3-Clause (MapLibre GL JS)</h3>
+<pre>Copyright (c) 2020, MapLibre contributors
+Copyright (c) 2020, Mapbox Inc.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are
+permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of
+   conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of
+   conditions and the following disclaimer in the documentation and/or other materials
+   provided with the distribution.
+3. Neither the name of the copyright holder nor the names of its contributors may be used
+   to endorse or promote products derived from this software without specific prior written
+   permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
+
+<h3>ISC (Lucide)</h3>
+<pre>ISC License
+
+Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather
+(MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2022.
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or
+without fee is hereby granted, provided that the above copyright notice and this permission
+notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS
+SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL
+THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY
+DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
+CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE
+OR PERFORMANCE OF THIS SOFTWARE.</pre>
+
+<h3>SIL Open Font License 1.1 (IBM Plex Sans, JetBrains Mono, STIX Two Text)</h3>
+<p class="dim"><small>Telif sahipleri: IBM Plex Sans — Copyright © 2017 IBM Corp. ·
+JetBrains Mono — Copyright © 2020 The JetBrains Mono Project Authors ·
+STIX Two Text — Copyright © 2001–2021 by the STI Pub Companies.
+Yazı tipleri yalnız alt kümelere ayrılmıştır (Latin, Latin-ext, Yunan); tasarımları
+değiştirilmemiş ve adları korunmuştur.</small></p>
+<pre>This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide development of
+collaborative font projects, to support the font creation efforts of academic and linguistic
+communities, and to provide a free and open framework in which fonts may be shared and
+improved in partnership with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and redistributed freely as
+long as they are not sold by themselves. The fonts, including any derivative works, can be
+bundled, embedded, redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives, however, cannot be
+released under any other type of license. The requirement for fonts to remain under this
+license does not apply to any document created using the fonts or their derivatives.
+
+PERMISSION &amp; CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining a copy of the Font
+Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and
+unmodified copies of the Font Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components, in Original or Modified
+Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled, redistributed and/or
+sold with any software, provided that each copy contains the above copyright notice and this
+license. These can be included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or binary files as long as
+those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit
+written permission is granted by the corresponding Copyright Holder. This restriction only
+applies to the primary font name as presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be
+used to promote, endorse or advertise any Modified Version, except to acknowledge the
+contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole, must be distributed
+entirely under this license, and must not be distributed under any other license. The
+requirement for fonts to remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT
+SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING
+ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT
+SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.</pre>
+
+<hr />
+<p class="dim"><small>Bir hata gördüysen ya da bir kaynağın atfı eksikse haber ver:
+<a href="mailto:fb1907dekuruldu@gmail.com">fb1907dekuruldu@gmail.com</a> ·
+<a href="gizlilik.html">Gizlilik Politikası</a></small></p>
+
+</body>
+</html>
